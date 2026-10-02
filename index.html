@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Food Corner - fresh pizza, burgers, sandwiches and pasta in Wah Cantt.">
+  <title>Food Corner | Fresh Pizza, Burgers, Sandwiches &amp; Pasta</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Internal CSS: styles for the Hours and Reviews boxes on this page only -->
+  <style>
+    .info-box {
+      width: 90%;
+      min-width: 260px;
+      max-width: 520px;
+      height: 310px;
+      min-height: 270px;
+      max-height: 350px;
+      margin: 36px auto 0;
+      padding: 20px 26px;
+      box-sizing: border-box;
+      background-color: #ffffff;
+      border: 2px solid #e5c9a8;
+      border-radius: 14px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+      overflow: auto;
+    }
+    .info-box h3 { margin: 0 0 10px; text-align: center; }
+    .info-box ul { list-style: none; margin: 0 0 12px; padding: 0; }
+    .info-box li { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px dotted #d9c3a5; }
+
+    .reviews-box {
+      max-width: 700px;
+      height: 230px;
+      margin: 0 auto;
+      padding: 8px 22px;
+      box-sizing: border-box;
+      background-color: #ffffff;
+      border: 2px solid #e5c9a8;
+      border-radius: 14px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+      overflow: scroll;
+      overflow-x: hidden;
+    }
+    .review { padding: 12px 0; border-bottom: 1px solid #eee2d3; }
+    .review:last-child { border-bottom: none; }
+    .review p { margin: 0 0 4px; }
+    .review .who { font-weight: bold; color: #7b241c; }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1 id="site-title">Food Corner</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Welcome to Food Corner</h2>
+    <p>Fresh, hot and made with love, from our kitchen straight to your table. Explore our menu of everyday favourites and order your next meal today.</p>
+    <p class="tagline" style="font-style: italic; font-size: 1.1rem;">&ldquo;Good food, good mood.&rdquo;</p>
+    <a href="#menu" class="btn">Explore Menu</a>
+  </section>
+
+  <section id="menu" class="section">
+    <h2 class="section-title">Our Menu</h2>
+
+    <div class="menu-grid">
+      <article class="card">
+        <img src="images/pizza.svg" alt="Pepperoni pizza">
+        <h3>Pizza</h3>
+        <p class="desc">Wood-fired crust with mozzarella, pepperoni and fresh basil.</p>
+        <p class="price-line">Price: <span class="price">Rs. 1,200</span></p>
+        <button class="order-btn" type="button">Order Now</button>
+      </article>
+
+      <article class="card">
+        <img src="images/burger.svg" alt="Cheese burger">
+        <h3>Burger</h3>
+        <p class="desc">Juicy beef patty with cheddar, crisp lettuce and our house sauce.</p>
+        <p class="price-line">Price: <span class="price">Rs. 650</span></p>
+        <button class="order-btn" type="button">Order Now</button>
+      </article>
+
+      <article class="card">
+        <img src="images/sandwich.svg" alt="Fresh sandwich">
+        <h3>Sandwich</h3>
+        <p class="desc">Toasted bread with melted cheese, lettuce and juicy tomato slices.</p>
+        <p class="price-line">Price: <span class="price">Rs. 450</span></p>
+        <button class="order-btn" type="button">Order Now</button>
+      </article>
+
+      <article class="card">
+        <img src="images/pasta.svg" alt="Spaghetti with meatballs">
+        <h3>Pasta</h3>
+        <p class="desc">Spaghetti in rich tomato sauce with tender meatballs and basil.</p>
+        <p class="price-line">Price: <span class="price">Rs. 850</span></p>
+        <button class="order-btn" type="button">Order Now</button>
+      </article>
+    </div>
+  </section>
+
+  <section id="about" class="section about">
+    <h2 class="section-title">About Us</h2>
+
+    <div class="about-text">
+      <p class="lead">Food Corner is a friendly neighbourhood restaurant serving freshly prepared pizza, burgers, sandwiches and pasta. We use quality ingredients, cook every order to demand and believe that a good meal should be affordable, warm and served with a smile.</p>
+      <p class="more">Whether you are stopping by for a quick lunch, a family dinner or a late-evening snack, our team is happy to welcome you. Dine in, take away or call ahead, your table is always ready.</p>
+    </div>
+
+    <div id="hours" class="info-box">
+      <h3>Visit Us</h3>
+      <ul>
+        <li><span>Mon &ndash; Thu</span> <span>12:00 pm &ndash; 11:00 pm</span></li>
+        <li><span>Fri &ndash; Sat</span> <span>12:00 pm &ndash; 1:00 am</span></li>
+        <li><span>Sunday</span> <span>1:00 pm &ndash; 11:00 pm</span></li>
+      </ul>
+      <p class="contact-line">Main Bazaar Road, Wah Cantt<br>
+        Call: <a href="tel:+920000000000">+92 000 0000000</a><br>
+        Email: <a href="mailto:hello@foodcorner.example">hello@foodcorner.example</a></p>
+    </div>
+  </section>
+
+  <section id="reviews" class="section">
+    <h2 class="section-title">What Our Guests Say</h2>
+
+    <div class="reviews-box">
+      <div class="review"><p>The pizza crust is crisp outside and soft inside. Easily the best in town.</p><p class="who">Ayesha K.</p></div>
+      <div class="review"><p>Burger was juicy and the house sauce is addictive. Quick service too.</p><p class="who">Hamza R.</p></div>
+      <div class="review"><p>We ordered sandwiches for a family lunch and everyone asked for more.</p><p class="who">Sana M.</p></div>
+      <div class="review"><p>Pasta portion is generous and the meatballs are perfectly seasoned.</p><p class="who">Usman T.</p></div>
+      <div class="review"><p>Clean place, friendly staff and fair prices. We come back every weekend.</p><p class="who">Fatima Z.</p></div>
+      <div class="review"><p>Late-night takeaway that is still hot when it reaches home. Highly recommended.</p><p class="who">Bilal A.</p></div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2 class="section-title">Contact Us</h2>
+
+    <form action="#" method="post">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com">
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+
+      <!-- spam-trap field: hidden from real visitors -->
+      <div class="hp-field">
+        <label for="website">Leave this empty</label>
+        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+      </div>
+
+      <button class="btn-submit" type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p class="footer-note" style="margin: 0; letter-spacing: 1px;">&copy; 2026 Food Corner</p>
+  </footer>
+
+</body>
+</html>
